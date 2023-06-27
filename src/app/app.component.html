@@ -12,8 +12,10 @@
 <!--here, these two curly bracks is a syntax for giving javascript
 variable, it means like in our case this variable is defined in APP_component.ts
 | means ek trh se ye variable dynamic hai jise app.component.ts se control krenge -->
-<div class="container-fluid"> <!--bootstrap ki class hai container or container fluid, padding mil jati hai bs container middle me kr deta hai-->
-    <h1>Welcome to TODO-LIST</h1>
+<div class="container"> <!--bootstrap ki class hai container or container fluid, padding mil jati hai bs container middle me kr deta hai-->
+    <h1 class="text-center">Welcome to TODO-LIST</h1>
+    <h1 class="text-center" mb-3>Code with Angular</h1> <!--mb means margin bottom-->
     <app-todo-list></app-todo-list> <!--it is my generated component selector-->
+    <!--is todo-list ke andar jo bhi hm dalenge ek TS file ke through model bna ke wo aayega,iske lie Todo.ts create ki hai-->
 </div>
 </div>

@@ -10,6 +10,6 @@ export class AppComponent {
   constructor(){
     setTimeout(() => {
       this.title= "Dynamic Title" ; //this setTimeout is a function in js, help to execute code later,
-    }, 2000); //ye time hai Ms me, or ye poora constructor me dala hai, init ke purpose se
+    }, 5000); //ye time hai Ms me, or ye poora constructor me dala hai, init ke purpose se
   } //without reloading hamara code change ho jayega
 }
