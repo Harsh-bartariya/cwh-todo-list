@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Todo } from 'src/app/Todo';
 
 @Component({
@@ -9,11 +9,13 @@ import { Todo } from 'src/app/Todo';
 export class TodoItemComponent implements OnInit {
    @Input()
   todo: Todo = new Todo;
-  constructor() { }
+  @Output() todoDelete: EventEmitter<Todo> = new EventEmitter();
+   constructor() { }
 
   ngOnInit(): void {
   }
   onClick(){
+    this.todoDelete.emit(this.todo);
   console.log("onclick button has clicked"); // we can see this in console, ctrl+shift+i 
 }
 
